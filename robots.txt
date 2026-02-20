@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://onlinecert.info/sitemap.xml

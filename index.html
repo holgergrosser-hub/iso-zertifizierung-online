@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineCert FAQ – ISO Zertifizierung online, schnell & günstig | OnlineCert.info</title>
+    <meta name="description" content="ISO 9001 Zertifizierung online: Wie läuft das ab? Was kostet es? Ist das Zertifikat anerkannt? Alle Antworten zu Ihrer Online-Zertifizierung.">
+    <meta name="keywords" content="ISO Zertifizierung online, ISO 9001 Zertifikat, Online Audit, günstige Zertifizierung, OnlineCert">
+    <link rel="canonical" href="https://onlinecert.info/faq">
+    <meta property="og:title" content="OnlineCert FAQ – ISO Zertifizierung online">
+    <meta property="og:description" content="ISO 9001 online zertifizieren: schnell, günstig, unkompliziert. Alle Fragen beantwortet.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Ist Ihr Zertifikat genauso anerkannt wie von einem akkreditierten Zertifizierer?","acceptedAnswer":{"@type":"Answer","text":"Nicht genauso anerkannt, aber es funktioniert. Am Anfang reicht eine nicht-akkreditierte Zertifizierung. Wenn ein großer Kunde ein akkreditiertes Zertifikat verlangt, habt ihr schon alle Dokumente und könnt schnell wechseln."}},
+        {"@type":"Question","name":"Wie läuft das Audit ab? Kommen Sie vor Ort?","acceptedAnswer":{"@type":"Answer","text":"Nein, wir machen alles online. Ihr schickt uns die Unterlagen vorab, wir prüfen die. Dann machen wir ein Online-Meeting und schauen uns alles in eurem System an."}},
+        {"@type":"Question","name":"Helfen Sie uns auch bei fehlenden Dokumenten?","acceptedAnswer":{"@type":"Answer","text":"Ja klar! Wir schauen uns eure Dokumente an und sagen, was fehlt. Wenn ihr keine Ahnung habt, schicken wir euch Mustervorlagen."}},
+        {"@type":"Question","name":"Wie komplex wird das mit ISO 9001 wirklich?","acceptedAnswer":{"@type":"Answer","text":"Man kann das kompliziert machen, aber wenn man es einfach aufbaut, tragen die Firmen das vor und gut ist."}}
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #fafbfc;
+            --white: #ffffff;
+            --ink: #0f1729;
+            --ink-soft: #3d4663;
+            --ink-muted: #7a819b;
+            --teal: #0d9488;
+            --teal-dark: #0a7a70;
+            --teal-light: #14b8a6;
+            --teal-pale: #e6f7f5;
+            --teal-glow: rgba(13, 148, 136, 0.1);
+            --blue: #2563eb;
+            --border: #e5e7ed;
+            --border-light: #f0f1f5;
+            --shadow-sm: 0 1px 3px rgba(15,23,41,0.04);
+            --shadow-md: 0 4px 16px rgba(15,23,41,0.06);
+            --shadow-lg: 0 12px 40px rgba(15,23,41,0.08);
+            --radius: 16px;
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'Sora', -apple-system, sans-serif;
+            --font-mono: 'Space Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-body); background: var(--bg);
+            color: var(--ink); line-height: 1.7; -webkit-font-smoothing: antialiased;
+        }
+
+        /* === NAV === */
+        .nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;
+            backdrop-filter: blur(20px); background: rgba(250,251,252,0.9);
+            border-bottom: 1px solid var(--border-light); transition: all 0.3s;
+        }
+        .nav.scrolled { box-shadow: var(--shadow-sm); }
+        .nav-logo {
+            font-family: var(--font-body); font-size: 1.15rem; font-weight: 700;
+            text-decoration: none; color: var(--ink);
+            display: flex; align-items: center; gap: 0.4rem;
+        }
+        .nav-logo-icon {
+            width: 28px; height: 28px; background: var(--teal); border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-size: 0.7rem; font-weight: 700;
+        }
+        .nav-cta {
+            padding: 0.55rem 1.3rem; background: var(--teal); color: #fff;
+            text-decoration: none; font-size: 0.82rem; font-weight: 500;
+            border-radius: 10px; transition: all 0.3s;
+        }
+        .nav-cta:hover { background: var(--teal-dark); transform: translateY(-1px); box-shadow: 0 4px 15px rgba(13,148,136,0.3); }
+
+        /* === HERO === */
+        .hero {
+            padding: 8rem 2rem 4rem; text-align: center;
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+            width: 800px; height: 400px;
+            background: radial-gradient(ellipse, var(--teal-glow) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-chips {
+            display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;
+            margin-bottom: 2rem; opacity: 0; animation: fadeUp 0.6s ease 0.1s forwards;
+        }
+        .chip {
+            padding: 0.3rem 0.8rem; background: var(--white); border: 1px solid var(--border);
+            border-radius: 100px; font-size: 0.72rem; font-weight: 500; color: var(--ink-soft);
+            display: flex; align-items: center; gap: 0.3rem;
+        }
+        .chip-dot { width: 6px; height: 6px; background: var(--teal); border-radius: 50%; }
+
+        .hero h1 {
+            font-family: var(--font-display); font-size: clamp(2.4rem, 5vw, 3.8rem);
+            line-height: 1.15; font-weight: 600; max-width: 700px; margin: 0 auto 1.2rem;
+            letter-spacing: -0.02em;
+            opacity: 0; animation: fadeUp 0.6s ease 0.2s forwards;
+        }
+        .hero h1 span { color: var(--teal); }
+
+        .hero-sub {
+            font-size: 1.05rem; color: var(--ink-muted); max-width: 520px; margin: 0 auto;
+            font-weight: 300; opacity: 0; animation: fadeUp 0.6s ease 0.35s forwards;
+        }
+
+        .hero-cards {
+            display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+            margin-top: 3rem; opacity: 0; animation: fadeUp 0.6s ease 0.5s forwards;
+        }
+        .hero-card {
+            background: var(--white); border: 1px solid var(--border); border-radius: 14px;
+            padding: 1.3rem 1.8rem; text-align: left; min-width: 180px;
+            box-shadow: var(--shadow-sm); transition: all 0.3s;
+        }
+        .hero-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+        .hero-card-val { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--teal); line-height: 1; }
+        .hero-card-lbl { font-size: 0.73rem; color: var(--ink-muted); margin-top: 0.2rem; }
+
+        /* === COMPARISON === */
+        .compare {
+            max-width: 780px; margin: 0 auto 3rem; padding: 0 2rem;
+        }
+        .compare-table {
+            background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+            overflow: hidden; box-shadow: var(--shadow-sm);
+        }
+        .compare-head {
+            display: grid; grid-template-columns: 1fr 1fr 1fr;
+            background: var(--ink); color: #fff; font-size: 0.78rem; font-weight: 600;
+        }
+        .compare-head > div { padding: 0.8rem 1.2rem; }
+        .compare-head > div:nth-child(2) { background: var(--teal); }
+        .compare-row {
+            display: grid; grid-template-columns: 1fr 1fr 1fr;
+            border-bottom: 1px solid var(--border-light); font-size: 0.82rem;
+        }
+        .compare-row:last-child { border-bottom: none; }
+        .compare-row > div { padding: 0.7rem 1.2rem; }
+        .compare-row > div:nth-child(2) { background: var(--teal-pale); font-weight: 500; }
+        .compare-check { color: var(--teal); font-weight: 700; }
+        .compare-x { color: var(--ink-muted); }
+
+        /* === SEARCH === */
+        .search-wrap { max-width: 780px; margin: 0 auto 2.5rem; padding: 0 2rem; }
+        .search-box { position: relative; }
+        .search-input {
+            width: 100%; padding: 0.9rem 1.2rem 0.9rem 2.8rem;
+            background: var(--white); border: 1.5px solid var(--border);
+            border-radius: 12px; font-family: var(--font-body); font-size: 0.9rem;
+            color: var(--ink); outline: none; transition: all 0.3s; box-shadow: var(--shadow-sm);
+        }
+        .search-input::placeholder { color: var(--ink-muted); font-weight: 300; }
+        .search-input:focus { border-color: var(--teal); box-shadow: 0 0 0 4px var(--teal-glow); }
+        .search-icon { position: absolute; left: 0.9rem; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; stroke: var(--ink-muted); }
+        .search-meta { font-size: 0.68rem; color: var(--ink-muted); margin-top: 0.4rem; font-family: var(--font-mono); }
+
+        /* === FAQ === */
+        .faq-wrap { max-width: 780px; margin: 0 auto; padding: 0 2rem; }
+
+        .faq-group { margin-bottom: 3.5rem; opacity: 0; transform: translateY(20px); transition: all 0.7s cubic-bezier(0.16,1,0.3,1); }
+        .faq-group.visible { opacity: 1; transform: translateY(0); }
+
+        .faq-group-head {
+            display: flex; align-items: center; gap: 0.8rem;
+            margin-bottom: 1rem; padding-bottom: 0.6rem;
+        }
+        .faq-group-badge {
+            padding: 0.25rem 0.7rem; background: var(--teal-pale); color: var(--teal);
+            border-radius: 8px; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .faq-group-title { font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; }
+
+        .faq-card {
+            background: var(--white); border: 1px solid var(--border);
+            border-radius: 14px; margin-bottom: 0.6rem;
+            overflow: hidden; transition: all 0.3s; box-shadow: var(--shadow-sm);
+        }
+        .faq-card:hover { box-shadow: var(--shadow-md); }
+        .faq-card.open { border-color: var(--teal); box-shadow: 0 0 0 1px var(--teal), var(--shadow-md); }
+
+        .faq-q {
+            display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+            padding: 1.1rem 1.3rem; cursor: pointer; -webkit-tap-highlight-color: transparent;
+        }
+        .faq-q-text { font-size: 0.92rem; font-weight: 500; line-height: 1.5; flex: 1; }
+
+        .faq-toggle-circle {
+            width: 28px; height: 28px; min-width: 28px; border-radius: 50%;
+            background: var(--bg); border: 1.5px solid var(--border);
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.3s;
+        }
+        .faq-toggle-circle svg { width: 12px; height: 12px; stroke: var(--ink-muted); transition: all 0.3s; }
+        .faq-card.open .faq-toggle-circle { background: var(--teal); border-color: var(--teal); }
+        .faq-card.open .faq-toggle-circle svg { stroke: #fff; transform: rotate(180deg); }
+
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.16,1,0.3,1); }
+        .faq-a-inner {
+            padding: 0 1.3rem 1.3rem; border-top: 1px solid var(--border-light);
+        }
+        .faq-a-text {
+            font-size: 0.88rem; color: var(--ink-soft); line-height: 1.85;
+            padding-top: 1rem; font-weight: 300;
+        }
+        .faq-a-text strong { color: var(--ink); font-weight: 600; }
+
+        .faq-a-cta {
+            display: inline-flex; align-items: center; gap: 0.3rem;
+            margin-top: 0.8rem; padding: 0.4rem 1rem;
+            background: var(--teal-pale); color: var(--teal); text-decoration: none;
+            font-size: 0.78rem; font-weight: 600; border-radius: 8px; transition: all 0.3s;
+        }
+        .faq-a-cta:hover { background: var(--teal); color: #fff; }
+
+        /* === TRUST === */
+        .trust {
+            max-width: 780px; margin: 2rem auto 3rem; padding: 0 2rem;
+        }
+        .trust-card {
+            background: linear-gradient(135deg, var(--ink) 0%, #1a2744 100%);
+            border-radius: var(--radius); padding: 2.5rem; color: #fff;
+            display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;
+        }
+        .trust-quote {
+            flex: 1; min-width: 280px;
+        }
+        .trust-quote-text {
+            font-family: var(--font-display); font-size: 1.2rem; font-style: italic;
+            line-height: 1.5; font-weight: 400; margin-bottom: 1rem;
+        }
+        .trust-quote-author { font-size: 0.78rem; color: rgba(255,255,255,0.6); }
+        .trust-quote-author strong { color: var(--teal-light); }
+        .trust-facts { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .trust-fact {
+            text-align: center; padding: 1rem; background: rgba(255,255,255,0.05);
+            border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); min-width: 100px;
+        }
+        .trust-fact-val { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: var(--teal-light); }
+        .trust-fact-lbl { font-size: 0.65rem; color: rgba(255,255,255,0.5); margin-top: 0.2rem; }
+
+        /* === NO RESULTS === */
+        .no-results { text-align: center; padding: 3rem; color: var(--ink-muted); display: none; font-size: 0.9rem; }
+        .no-results.visible { display: block; }
+        .no-results a { color: var(--teal); }
+
+        /* === CTA === */
+        .cta-section { max-width: 780px; margin: 2rem auto 5rem; padding: 0 2rem; }
+        .cta-box {
+            background: var(--white); border: 2px solid var(--teal);
+            border-radius: 20px; padding: 3rem; text-align: center;
+            position: relative; overflow: hidden;
+        }
+        .cta-box::before {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(135deg, var(--teal-glow), transparent 50%);
+            pointer-events: none;
+        }
+        .cta-title { font-family: var(--font-display); font-size: 1.8rem; font-weight: 600; margin-bottom: 0.5rem; position: relative; }
+        .cta-sub { color: var(--ink-muted); font-weight: 300; max-width: 420px; margin: 0 auto 1.5rem; font-size: 0.95rem; position: relative; }
+        .cta-primary {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.9rem 2.2rem; background: var(--teal); color: #fff;
+            text-decoration: none; font-weight: 600; font-size: 0.95rem;
+            border-radius: 12px; transition: all 0.3s; position: relative;
+        }
+        .cta-primary:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(13,148,136,0.3); }
+        .cta-price { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-muted); margin-top: 0.8rem; position: relative; }
+
+        /* === FOOTER === */
+        .footer {
+            max-width: 780px; margin: 0 auto; padding: 1.5rem 2rem;
+            border-top: 1px solid var(--border); display: flex;
+            justify-content: space-between; font-size: 0.72rem;
+            color: var(--ink-muted); flex-wrap: wrap; gap: 0.8rem;
+        }
+        .footer a { color: var(--teal); text-decoration: none; }
+        .footer-links { display: flex; gap: 1.5rem; }
+
+        .btt {
+            position: fixed; bottom: 1.5rem; right: 1.5rem; width: 38px; height: 38px;
+            background: var(--teal); border: none; border-radius: 10px; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: all 0.3s; z-index: 50; box-shadow: 0 4px 12px rgba(13,148,136,0.3);
+        }
+        .btt.visible { opacity: 1; }
+        .btt svg { stroke: #fff; width: 16px; height: 16px; }
+
+        .progress { position: fixed; top: 0; left: 0; height: 2px; background: linear-gradient(90deg, var(--teal), var(--teal-light)); z-index: 200; width: 0; }
+
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+
+        @media (max-width: 768px) {
+            .hero { padding: 7rem 1.5rem 3rem; }
+            .hero-cards { gap: 0.6rem; }
+            .hero-card { min-width: 140px; padding: 1rem; }
+            .faq-wrap, .search-wrap, .cta-section, .compare, .trust { padding: 0 1.2rem; }
+            .compare-head, .compare-row { font-size: 0.7rem; }
+            .compare-head > div, .compare-row > div { padding: 0.5rem 0.6rem; }
+            .trust-card { flex-direction: column; }
+            .nav { padding: 0.8rem 1.2rem; }
+            .footer { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress" id="progress"></div>
+
+    <nav class="nav" id="nav">
+        <a href="https://onlinecert.info" class="nav-logo">
+            <div class="nav-logo-icon">OC</div>
+            OnlineCert
+        </a>
+        <a href="https://onlinecert.info/anfrage" class="nav-cta">Angebot anfordern</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-chips">
+            <div class="chip"><span class="chip-dot"></span>ISO 9001</div>
+            <div class="chip"><span class="chip-dot"></span>ISO 14001</div>
+            <div class="chip"><span class="chip-dot"></span>ISO 45001</div>
+            <div class="chip"><span class="chip-dot"></span>100% Online</div>
+        </div>
+        <h1>ISO Zertifizierung <span>einfach online</span> – alle Fragen beantwortet</h1>
+        <p class="hero-sub">Schneller, günstiger und unkomplizierter als beim akkreditierten Zertifizierer. Hier erfahren Sie, wie das funktioniert.</p>
+        <div class="hero-cards">
+            <div class="hero-card"><div class="hero-card-val">70%</div><div class="hero-card-lbl">günstiger als akk. Zertifizierer</div></div>
+            <div class="hero-card"><div class="hero-card-val">3–6</div><div class="hero-card-lbl">Wochen Durchlaufzeit</div></div>
+            <div class="hero-card"><div class="hero-card-val">100%</div><div class="hero-card-lbl">Online – kein Vor-Ort-Audit</div></div>
+        </div>
+    </header>
+
+    <!-- Comparison -->
+    <section class="compare">
+        <div class="compare-table">
+            <div class="compare-head">
+                <div></div>
+                <div>OnlineCert</div>
+                <div>Akk. Zertifizierer</div>
+            </div>
+            <div class="compare-row"><div>Audit-Form</div><div class="compare-check">100% Online</div><div>Vor-Ort-Pflicht</div></div>
+            <div class="compare-row"><div>Durchlaufzeit</div><div class="compare-check">3–6 Wochen</div><div>3–6 Monate</div></div>
+            <div class="compare-row"><div>Kosten (Erstjahr)</div><div class="compare-check">ab 1.490 €</div><div>ab 4.500 €</div></div>
+            <div class="compare-row"><div>Hilfe bei Dokumenten</div><div class="compare-check">✓ Inklusive</div><div class="compare-x">✗ Eigenleistung</div></div>
+            <div class="compare-row"><div>DAkkS-Akkreditierung</div><div>Nein (nicht-akkreditiert)</div><div class="compare-check">Ja</div></div>
+        </div>
+    </section>
+
+    <!-- Search -->
+    <section class="search-wrap">
+        <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <input type="text" class="search-input" id="searchInput" placeholder="Suchen: Zertifikat, Kosten, Audit, Akkreditierung ...">
+            <div class="search-meta" id="searchMeta">10 häufige Fragen zur Online-Zertifizierung</div>
+        </div>
+    </section>
+
+    <main class="faq-wrap" id="faqContent">
+
+        <!-- Anerkennung & Legitimität -->
+        <section class="faq-group" data-cat="Anerkennung">
+            <div class="faq-group-head">
+                <span class="faq-group-badge">Anerkennung</span>
+                <h2 class="faq-group-title">Zertifikat & Anerkennung</h2>
+            </div>
+
+            <div class="faq-card"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Ist Ihr Zertifikat genauso anerkannt wie von einem akkreditierten Zertifizierer?</h3><div class="faq-toggle-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Nicht genauso anerkannt, aber <strong>es funktioniert</strong>. Am Anfang reicht eine nicht-akkreditierte Zertifizierung. Wenn dann ein großer Kunde kommt und ein akkreditiertes Zertifikat verlangt, habt ihr schon alle Dokumente und könnt sehr schnell wechseln. Wir sind die Übergangslösung. Viele Kunden – ohne ISO-Zertifikat – brauchen erstmal den Nachweis, dass sie ein QM-System haben. Dafür sind wir perfekt.</p><a href="https://onlinecert.info/anfrage" class="faq-a-cta">Jetzt Angebot anfordern →</a></div></div></div>
+
+            <div class="faq-card"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Können wir später zu einem akkreditierten Zertifizierer wechseln?</h3><div class="faq-toggle-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Ja, absolut! Das ist sogar <strong>einer unserer größten Vorteile</strong>. Durch die Zertifizierung bei uns habt ihr bereits alle Dokumente, die ihr braucht: Handbuch, Prozessbeschreibungen, Risikoanalyse, Managementbewertung. Beim Wechsel zu einem akkreditierten Zertifizierer müsst ihr nur noch das externe Audit bestehen – und ihr seid vorbereitet.</p></div></div></div>
+
+            <div class="faq-card"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Für wen ist OnlineCert die richtige Wahl?</h3><div class="faq-toggle-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Für <strong>kleine und mittlere Unternehmen</strong>, die schnell und kostengünstig ein ISO-Zertifikat brauchen – ohne monatelange Wartezeiten. Besonders für Firmen, die erstmals zertifizieren, bei Ausschreibungen ein Zertifikat nachweisen müssen, oder als Zwischenlösung starten wollen, bevor sie ggf. später zu einer akkreditierten Stelle wechseln.</p></div></div></div>
+        </section>
+
+        <!-- Ablauf -->
+        <section class="faq-group" data-cat="Ablauf">
+            <div class="faq-group-head">
+                <span class="faq-group-badge">Ablauf</span>
+                <h2 class="faq-group-title">So läuft die Online-Zertifizierung</h2>
+            </div>
+
+            <div class="faq-card"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Wie läuft das Audit ab? Kommen Sie vor Ort?</h3><div class="faq-toggle-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Nein, <strong>wir machen alles online</strong>. Wir sind kein akkreditierter Zertifizierer, wir kommen nicht ins Haus. Ihr schickt uns die Unterlagen vorab zu, wir prüfen die. Dann machen wir ein Online-Meeting und schauen uns alles nochmal in eurem System an – wie ihr Verträge ablegt, Angebote schreibt, Mitarbeiter einplant, wie der Prozess läuft.</p></div></div></div>
+
+            <div class="faq-card"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Helfen Sie uns auch bei fehlenden Dokumenten?</h3><div class="faq-toggle-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Ja klar! Im ersten Jahr läuft das so: <strong>Wir schauen uns eure Dokumente an und sagen, was fehlt.</strong> Wir geben euch konkrete Hinweise und Mustervorlagen. Wenn ihr keine Ahnung habt, lieber Bescheid geben – dann schicke ich euch meine Muster und ihr passt die an. Das ist bei uns inklusive, beim akkreditierten Zertifizierer müsst ihr das komplett selbst machen.</p></div></div></div>
+
+            <div class="faq-card"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Was brauchen wir an Dokumentation für die Zertifizierung?</h3><div class="faq-toggle-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Ihr braucht: <strong>QM-Systembeschreibung, Qualitätsziele, Organigramm, Prozessbeschreibungen, Lieferantenbewertung und Kundenzufriedenheit.</strong> Beschreibt einfach, was ihr macht. Das meiste habt ihr wahrscheinlich schon – es muss nur strukturiert aufbereitet werden. Und genau dabei helfen wir euch.</p><a href="https://onlinecert.info/anfrage" class="faq-a-cta">Dokumenten-Check anfordern →</a></div></div></div>
+
+            <div class="faq-card"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Wie komplex wird das mit ISO 9001 wirklich?</h3><div class="faq-toggle-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Man kann das kompliziert machen, aber <strong>wenn man es einfach aufbaut, tragen die Firmen das vor und gut ist</strong>. Mehr Schau kann man immer machen, aber nicht mit uns. Bei uns beschreibt der Kunde das, was er hat. Das ist nicht umfangreich – oft reicht schon, was ihr sowieso täglich tut, nur eben dokumentiert.</p></div></div></div>
+        </section>
+
+        <!-- Kosten & Vergleich -->
+        <section class="faq-group" data-cat="Kosten">
+            <div class="faq-group-head">
+                <span class="faq-group-badge">Kosten</span>
+                <h2 class="faq-group-title">Kosten & Transparenz</h2>
+            </div>
+
+            <div class="faq-card"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Was kostet die Online-Zertifizierung?</h3><div class="faq-toggle-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text"><strong>Ab 1.490 € netto</strong> für Unternehmen mit bis zu 10 Mitarbeitern. Darin enthalten: Dokumentenprüfung, Online-Audit, Mustervorlagen bei Bedarf und das Zertifikat selbst. Zum Vergleich: Beim akkreditierten Zertifizierer zahlt ihr für die gleiche Firmengröße schnell 4.500–6.000 € – ohne Beratung.</p></div></div></div>
+
+            <div class="faq-card"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Können wir den Scope eingrenzen, um Kosten zu sparen?</h3><div class="faq-toggle-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">In der Regel nicht – <strong>die ISO 9001 gilt für die ganze Firma</strong>. Aber: Bei uns bedeutet „ganze Firma" nicht automatisch höhere Kosten. Durch das Online-Format und unsere pragmatische Vorgehensweise bleibt der Aufwand überschaubar – auch bei mehreren Standorten oder Prozessen.</p></div></div></div>
+
+            <div class="faq-card"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Gibt es BAFA-Förderung für die Zertifizierung?</h3><div class="faq-toggle-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Die BAFA fördert <strong>Beratungsleistungen für KMU mit bis zu 80 % (max. 3.200 €)</strong>. Die Beratung zur Vorbereitung auf die Zertifizierung kann förderfähig sein – die Zertifizierung selbst nicht. Wichtig: Der Förderantrag muss vor Beratungsbeginn gestellt werden. Sprechen Sie uns an, wir beraten Sie gern dazu.</p></div></div></div>
+        </section>
+    </main>
+
+    <div class="no-results" id="noResults"><p>Keine Ergebnisse. <a href="https://onlinecert.info/anfrage">Frage direkt stellen →</a></p></div>
+
+    <!-- Trust -->
+    <section class="trust">
+        <div class="trust-card">
+            <div class="trust-quote">
+                <p class="trust-quote-text">„Wir sind die Übergangslösung – aber eine, die funktioniert. Viele Kunden starten bei uns und haben dann alle Dokumente, wenn sie irgendwann zu einem akkreditierten Zertifizierer wechseln wollen."</p>
+                <div class="trust-quote-author"><strong>Holger Grosser</strong> · Gründer OnlineCert · 30+ Jahre QM-Erfahrung</div>
+            </div>
+            <div class="trust-facts">
+                <div class="trust-fact"><div class="trust-fact-val">1.000+</div><div class="trust-fact-lbl">Audits</div></div>
+                <div class="trust-fact"><div class="trust-fact-val">30+</div><div class="trust-fact-lbl">Jahre</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-box">
+            <h2 class="cta-title">Bereit für Ihr Zertifikat?</h2>
+            <p class="cta-sub">Fordern Sie ein unverbindliches Angebot an – wir melden uns innerhalb von 24 Stunden.</p>
+            <a href="https://onlinecert.info/anfrage" class="cta-primary">Kostenloses Angebot anfordern →</a>
+            <p class="cta-price">Ab 1.490 € netto · Keine versteckten Kosten</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>&copy; 2026 OnlineCert UG · Holger Grosser</div>
+        <div class="footer-links">
+            <a href="https://onlinecert.info/impressum">Impressum</a>
+            <a href="https://onlinecert.info/datenschutz">Datenschutz</a>
+            <a href="https://iso9001.info">ISO9001.info</a>
+            <a href="https://qm-guru.de">QM-Guru.de</a>
+        </div>
+    </footer>
+
+    <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+    <script>
+        function toggle(el){const c=el.closest('.faq-card'),a=c.querySelector('.faq-a'),o=c.classList.contains('open');c.closest('.faq-group').querySelectorAll('.faq-card.open').forEach(x=>{if(x!==c){x.classList.remove('open');x.querySelector('.faq-a').style.maxHeight='0'}});if(o){c.classList.remove('open');a.style.maxHeight='0'}else{c.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}}
+
+        const si=document.getElementById('searchInput'),sm=document.getElementById('searchMeta'),nr=document.getElementById('noResults');
+        si.addEventListener('input',function(){const q=this.value.toLowerCase().trim(),cards=document.querySelectorAll('.faq-card'),groups=document.querySelectorAll('.faq-group');let v=0;if(!q){cards.forEach(c=>c.style.display='');groups.forEach(g=>g.style.display='');sm.textContent='10 häufige Fragen zur Online-Zertifizierung';nr.classList.remove('visible');return}cards.forEach(c=>{if(c.textContent.toLowerCase().includes(q)){c.style.display='';v++}else c.style.display='none'});groups.forEach(g=>{g.style.display=g.querySelectorAll('.faq-card:not([style*=\"display: none\"])').length?'':'none'});sm.textContent=v+' '+(v===1?'Ergebnis':'Ergebnisse');nr.classList.toggle('visible',v===0)});
+
+        const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:0.1});
+        document.querySelectorAll('.faq-group').forEach(el=>obs.observe(el));
+
+        window.addEventListener('scroll',()=>{const s=window.scrollY,m=document.documentElement.scrollHeight-window.innerHeight;document.getElementById('nav').classList.toggle('scrolled',s>50);document.getElementById('progress').style.width=(s/m*100)+'%';document.getElementById('btt').classList.toggle('visible',s>400)});
+    </script>
+</body>
+</html>
